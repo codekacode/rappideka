@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800;900&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  display: block;
+  max-width: 200px;
+  background-color: aquamarine;
+}
+
+.burger-menu input[type="checkbox"], .burger-menu .fa-bars, . burger-menu {
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 58px;
+}
+
+.burger-menu .fa-bars, .burger-menu .fa-times {
+  font-size: 48px;
+}
+
+.burger-menu input[type="checkbox"] {
+  opacity: 0;
+}
