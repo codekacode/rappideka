@@ -10,8 +10,8 @@
   <title>Rappicodeka</title>
 </head>
 <body>
-  <header>
-    <div class="burger-menu">
+  <header class="header">
+    <div class="wrap-header">
       <input type="checkbox">
       <i class="fas fa-bars"></i>
       <i class="fas fa-times"></i>
@@ -26,23 +26,26 @@
         </ul>
       </nav>
     </div>
-    <p>Direccion de Entrega: <a>Ingresar mi ubicacion</a></p>
-    <img class="logo" src="#" alt="LOGO">
-    <input placeholder="Busca en Rappicodeka..." />
-    <button>CART</button>
-    <span><a>Ingreso</a></span>
+    <p>Direccion de Entrega: <a class="link_orange">Ingresar mi ubicacion</a></p>
+    <img class="logo" src="/images/logo.png" alt="LOGO">
+    <input class="input" type="text" placeholder="Busca en Rappicodeka..." />
+    <button class="button-cart">
+      <span><i class="fas fa-shopping-cart"></i></span>
+      0
+    </button>
+    <span class="link_green"><a>Ingreso</a></span>
   </header>
   <div class="wrapper">
     <div class="principal">
-      <div>
-        <h3>Si tienes <span >Rapicodeka,</span>tienes <span class="bold">Todo.</span></h3>
-        <p>Ya no tienes que salir de tu casa u oficina para disfrutar lo mejor de tu ciudad. <b>Te llevamos cualquier cosa en minutos!</b></p>
-        <form>
+      <div class="principal-first">
+        <h1 class="principal-title">Si tienes <span class="bold_orange">Rappideka,<br></span>tienes <span class="bold_black">Todo.</span></h3>
+        <p class="description">Ya no tienes que salir de tu casa u oficina para disfrutar lo mejor de tu ciudad. <b>Te llevamos cualquier cosa en minutos!</b></p>
+        <form class="input-form">
           <input type="text" name="" id="">
           <button><i class="fas fa-search"></i></button>
         </form>
       </div>
-      <div>
+      <div class="principal-second">
         <div class="product-link">
           <a>
             <img src="/images/burger.jpg" alt="burger link">

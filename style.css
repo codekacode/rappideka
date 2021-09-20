@@ -4,53 +4,191 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-.burger-menu a {
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrap-header a {
   text-decoration: none;
   display: block;
   max-width: 200px;
-  background-color: aquamarine;
 }
 
- .burger-menu input[type="checkbox"], .burger-menu .fa-bars, .burger-menu .fa-times  {
+ .wrap-header input[type="checkbox"], .burger-menu .fa-bars, .burger-menu .fa-times  {
   position: absolute;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   left: 0;
   top: 0;
-  width: 48px;
-  height: 58px;
+  width: 28px;
+  height: 28px;
 }
 
-
-.burger-menu .fa-bars, .burger-menu .fa-times {
-  font-size: 48px;
+.wrap-header .fa-bars, .wrap-header .fa-times {
+  font-size: 20px;
 }
 
-.burger-menu input[type="checkbox"] {
+.wrap-header input[type="checkbox"] {
   opacity: 0;
   z-index: 1;
 }
 
-.burger-menu {
-  color: cornflowerblue;
+.wrap-header {
+  color: black;
   position: relative;
-  background-color: gainsboro;
-  min-height: 58px;
+  min-height: 28px;
+  z-index: 1;
 }
 
-.burger-menu nav {
+.wrap-header nav {
   display: none;
 }
 
-.burger-menu input:checked ~ nav {
+.wrap-header input:checked ~ nav {
   display: block;
 }
 
-.burger-menu input:checked ~ .fa-bars {
+.wrap-header input:checked ~ .fa-bars {
   display: none;
 }
 
-.burger-menu input:not(:checked) ~ .fa-times {
+.wrap-header input:not(:checked) ~ .fa-times {
   display: none;
 }
+
+.link_orange {
+  color: rgb(255, 68, 31);
+  font-weight: 700;
+}
+
+.input{
+  background-color: rgb(247, 248, 249);
+  border-radius: 4px;
+  height: 26px;
+  border: none;
+  padding: 8px 17px 8px 8px;
+  caret-color: rgb(41, 216, 132);
+}
+
+.input:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: rgb(41, 216, 132);
+  outline: rgb(41, 216, 132);
+}
+
+.button-cart {
+  background-color: rgb(230, 235, 241);
+  color: rgb(179, 185, 194);
+  border: none;
+  padding: 8px 17px 8px 8px;
+  border-radius: 4px;
+}
+
+.link_green {
+  font-weight: 800;
+  color: rgb(41, 216, 132);
+}
+
+.bold_orange {
+  font-weight: 900;
+  color: rgb(255, 68, 31);
+}
+
+.bold_black {
+  font-weight: 900;
+}
+
+.principal {
+  display: flex;
+  background-color: rgb(247, 248, 249);
+  height: 85vh;
+}
+
+.input-form {
+  box-shadow: rgb(230 235 241) 0px 1px 0px 0px;
+  background-color: #fff;
+  height: 60px;
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  max-width: 900px;
+  border: ;
+}
+
+.input-form input {
+  font-size: 20px;
+  flex-grow: 2;
+  border: none;
+  color: rgb(106, 105, 110);
+  outline: none;
+}
+
+.input-form button {
+  color: #fff;
+  border: none;
+  background-color: rgb(255, 68, 31);
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.fa-search {
+  transform: scale(1.7);
+  border: none;
+  width: 48px;
+}
+
+.principal .principal-first, .principal .principal-second {
+  width: calc(50% - 20px);
+}
+
+.principal .principal-first{
+  margin-left: 90px;
+  margin-right: 100px;
+  position: sticky;
+  margin-top: 80px;
+}
+
+.principal-title {
+  font-size: 3.5em;
+}
+
+.principal .description {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.principal-second {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.product-link a {
+  padding: 10px 0;
+}
+
+.product-link{
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  border-radius: 7px;
+}
+
+.product-link a img{
+  max-width: 150px;
+}
+
+.principal-second p {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+
