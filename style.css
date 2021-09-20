@@ -154,8 +154,9 @@ body {
   margin-top: 80px;
 }
 
-.principal-title {
+.principal-title, .second-title {
   font-size: 3.5em;
+  font-weight: normal;
 }
 
 .principal .description {
@@ -170,8 +171,9 @@ body {
   grid-template-rows: 1fr 1fr;
   gap: 20px;
 }
+
 .product-link a {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .product-link{
@@ -179,6 +181,7 @@ body {
   text-align: center;
   background: #fff;
   border-radius: 7px;
+  padding: 20px 0;
 }
 
 .product-link a img{
@@ -189,6 +192,37 @@ body {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: .5px;
+  margin: 0;
 }
 
+.second {
+  padding: 70px;
+  height: 90vh;
+}
+.container-head {
+  text-align: center;
+}
+
+.whats-here-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.whats-here {
+  width: 33%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whats-here p {
+  text-align: center;
+}
+
+.fa-clock, .fa-calendar-alt, .fa-store {
+  color: rgb(255, 68, 31);
+  font-size: 34px;
+}
 
