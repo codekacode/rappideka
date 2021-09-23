@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Nunito', sans-serif;
+  z-index: 1;
 }
 
 .header {
@@ -33,7 +34,7 @@ body {
 
 .wrap-header input[type="checkbox"] {
   opacity: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .wrap-header {
@@ -226,3 +227,93 @@ body {
   font-size: 34px;
 }
 
+.brand-list ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.card-container {
+  display: flex;
+  gap: 100px;
+  padding: 90px;
+}
+
+.card-container-img, .card-container-text{
+  max-width: calc(50% - 16px);
+  height: auto
+}
+
+.card-container-img img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+ .btn_green {
+   border: none;
+   background-color: rgb(41, 216, 132); 
+   padding: 5px 10px;
+   border-radius: 4px;
+   color: #fff;
+   font-weight: bold;
+ }
+
+.list-category-wrap-foot {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   padding: 70px;
+ }
+
+.foot-title {
+  font-weight: 800;
+}
+
+footer ul li {
+  list-style: none;
+  width: 170px;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+
+footer ul li a {
+  color: rgb(106, 105, 110);
+  line-height: 1.8;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  max-width: 460px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.category-foot {
+  padding: 0;
+}
+
+.last-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.social a{
+  font-size: 30px;
+  color: rgb(106, 105, 110);
+  margin: 0 7px;
+}
+
+.os button{
+  border-radius: 7px;
+  background-color: rgb(94, 0, 190);
+  height: 40px;
+  color: #fff;
+  padding: 5px 15px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
