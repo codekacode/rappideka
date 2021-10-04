@@ -10,10 +10,15 @@ body {
   z-index: 1;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 80px;
 }
 
 .wrap-header a {
@@ -323,33 +328,66 @@ footer ul {
   font-weight: 700;
 }
 
+.restaurant-wrap .fas, .restaurant-wrap .far {
+  color: rgb(106, 105, 110);;
+  font-size: 0.7em;
+}
+
 .restaurant-detail-wrap {
   grid-area: header;
   padding: 40px;
   display: flex;
+  gap: 40px;
+  background: rgb(247, 248, 249);
+}
+
+.restaurant-detail-wrap .rest-img img {
+  border-radius: 50%;
 }
 
 .menu-restaurant {
-  grid-area: menu;
   display: grid;
-  padding: 40px;
+  grid-template-areas: 
+    "labelmenu"
+    "menulist";
+  border: 1px solid rgb(230, 235, 241);
 }
 
 .menu-list-link {
   display: grid;
+  grid-area: menulist;
 }
-
+ 
 .menu-list-link a {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  line-height: 30px;
+  padding: 12px 15px 12px 40px;
+  color: rgb(46, 44, 54);
 }
+
+.fa-chevron-right {
+  font-size: 10px;
+
+}
+
+.menu-title {
+  grid-area: labelmenu;
+  padding: 12px 16px 12px 40px;
+  
+}
+
 .products-restaurant {
   grid-area: detail;
+  border: 1px solid rgb(230, 235, 241);
 }
 
 .delivery-details {
   display: flex;
   justify-content: space-between;
+  border: 1px solid rgb(230, 235, 241);
+  padding: 12px 16px;
 }
 
 .restaurant-wrap {
@@ -362,4 +400,69 @@ footer ul {
     "header header"
     "menu detail"
     "menu detail";
+  color: rgb(46, 44, 54);
+
+}
+
+.menu-unit {
+  display: flex;
+  gap: 20px;
+  max-width: 450px;
+  border: 1px solid rgb(230, 235, 241);
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.menu-unit img {
+  height: 100px;
+  width: 127px;
+  border-radius: 8px;
+}
+
+.menu-unit .add-btn {
+  background-color: rgb(41, 216, 132);
+  border-radius: 50%;
+  min-width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.menu-unit .add-btn a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.list-menu {
+  padding: 40px 24px;
+}
+
+.restaurant-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.restaurant-detail-title {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.star {
+  border: 1px solid rgb(230, 235, 241);
+  border-radius: 8px;
+  padding: 4px 8px ;
+  background-color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.star .fas {
+  color: rgb(255, 174, 0);
 }
